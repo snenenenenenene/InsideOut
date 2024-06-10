@@ -7,15 +7,52 @@
       "output": "static",
       "bundler": "metro"
     },
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "backgroundColor": "#FBE0B9"
+    },
     "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/OpenDyslexic3-Regular.ttf",
+            "./assets/fonts/OpenDyslexic3-Bold.ttf"
+          ]
+        }
+      ],
       [
         "expo-router",
         {
           "origin": "https://n"
         }
-      ]
+      ],
+      "expo-localization"
     ],
     "name": "BinnensteBuiten",
-    "slug": "BinnensteBuiten"
+    "slug": "BinnensteBuiten",
+    "assets": ["./assets/fonts"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://n"
+      },
+      "eas": {
+        "projectId": "2ce06953-0ea2-43cd-8be3-485f535a0d69"
+      }
+    },
+    "android": {
+      "package": "com.snenenenene.BinnensteBuiten"
+    },
+    "ios": {
+      "bundleIdentifier": "com.snenenenene.BinnensteBuiten"
+    },
+    "owner": "snenenenene",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/2ce06953-0ea2-43cd-8be3-485f535a0d69"
+    }
   }
 }
